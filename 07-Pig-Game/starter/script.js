@@ -56,6 +56,7 @@ btnHold.addEventListener('click', function(){
             document.querySelector('.player--'+currentPlayer).classList.add('player--winner');
             document.querySelector('#name--'+currentPlayer).classList.add('player--winner','name');
             playing = false;
+            diceEl.classList.add('hidden');
         }
         else {
             switchPlayer(currentPlayer);
@@ -72,7 +73,6 @@ btnNew.addEventListener('click', function(){
     document.querySelector('.player--1').classList.remove('player--active');
     score0El.textContent = 0;
     score1El.textContent = 0;
-    diceEl.classList.add('hidden');
     playing = true;
 })
 
