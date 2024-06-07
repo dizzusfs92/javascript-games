@@ -39,8 +39,15 @@ btnRoll.addEventListener('click', function(){
     else{
         currentPlayerEl.textContent = 0;
         currentPlayerEl = changePlayer(currentPlayerEl);
+        currentScore = 0;
     }
-})
+});
+
+btnHold.addEventListener('click', function(){
+    console.log('dddas');
+    currentPlayerEl === current0El ? score0El.textContent = Number(score0El.textContent) + currentScore : score1El.textContent = Number(score1El.textContent) + currentScore;
+    currentPlayerEl = changePlayer(currentPlayerEl);
+});
 
 
 
